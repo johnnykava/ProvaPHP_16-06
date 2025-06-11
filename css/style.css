@@ -1,0 +1,66 @@
+/*============ CSS GLOBAL ============*/
+body{
+    background-color: rgb(241, 241, 241);
+    font-family: 'Segoe UI', sans-serif;
+}
+/*====================================*/
+
+/*============ CSS HOME ============*/
+.home{
+    background: linear-gradient(135deg, #ff8c00, #ff0080);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+    height: 100vh; /* Faz o body ocupar 100% da altura da tela (viewport height) */
+    display: flex; /* Ativa o modo Flexbox */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center;
+}
+
+.container{
+    width: 350px; /* Um pouco mais de espaço */
+    height: auto; /* Deixa a altura se ajustar ao conteúdo */
+    background-color: rgba(255, 255, 255, 0.2); /* Branco com leve transparência */
+    padding: 40px; /* Espaçamento interno */
+    border-radius: 10px; /* Cantos arredondados */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidade */
+    text-align: center; /* Centraliza o texto e os botões dentro do card */
+}
+
+.container h1{
+    text-transform: uppercase;
+}
+
+.container input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Garante que padding não afete a largura total */
+}
+
+.container button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(90deg, #ff8c00, #ff0080);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.container .botao-link {
+    display: inline-block; /* Essencial para que o link aceite padding e width */
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    background: linear-gradient(90deg, #ff8c00, #ff0080);
+    color: white;
+    font-size: 16px;
+    text-decoration: none; /* Remove o sublinhado padrão do link */
+    box-sizing: border-box; /* Garante que o padding não "estoure" a largura */
+}
+/*==================================*/
