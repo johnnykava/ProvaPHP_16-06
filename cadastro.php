@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -20,6 +21,11 @@
                 require_once 'function.php';
 
                 validar_codigo();
+
+                if(!empty($_SESSION)){
+                    header('location:dashboard.php');
+                    exit();
+                }
             ?>
 
             </div>
