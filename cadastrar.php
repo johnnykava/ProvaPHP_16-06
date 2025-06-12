@@ -50,7 +50,7 @@
         exit;
     }
 
-    if(!mysqli_stmt_bind_param($stmt,"sss",$usuario,$senha,$email)){
+    if(!mysqli_stmt_bind_param($stmt,"sss",$usuario,$senha, $email)){
         header('location:cadastro.php?codigo=3');
         exit;
     }
@@ -59,6 +59,12 @@
         header('location:cadastro.php?codigo=3');
         exit;
     }
+
+    session_start();
+
+    $_SESSION['id'] = $id;
+    $_SESSION['usuario'] = $usuario;
+    $_SESSION['email'] = $email;
 
     header('location:dashboard.php');
 ?>
