@@ -29,6 +29,11 @@
             case 2:
                 $msg = "<h3>Você tem que preencher todos os dados do formulario!</h3>";
                 break;
+
+            case 3:
+                $msg = "<h3>Ocorreu um erro ao acessar banco de dados. Por favor, contate
+                        o suporte, ou tente novamente mais tarde</h3>";
+                break;
             
             default:
                 $msg = "";

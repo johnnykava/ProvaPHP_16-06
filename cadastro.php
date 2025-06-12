@@ -23,7 +23,7 @@
             ?>
 
             </div>
-            <form action="validar.php" method="post">
+            <form action="cadastrar.php" method="post">
                 <div id="informativo">
                     <p>Preencha os campos abaixo:</p>
                 </div>
@@ -35,17 +35,7 @@
                     <a class="botao-link" href="index.php">Voltar a Home</a>
                 </div> 
             </form>  
-            
-            <?php
-
-                require_once 'includes/conexao.php';
-
-                conectar_banco();
-
-            ?>
-
         </main>
     </div>
-
 </body>
 </html>
