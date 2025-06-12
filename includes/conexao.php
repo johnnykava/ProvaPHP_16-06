@@ -11,5 +11,7 @@
         if(!$conn){
             exit ("Erro de conexão: " . mysqli_connect_error());
         }
+
+        return $conn;
     }
 ?>
