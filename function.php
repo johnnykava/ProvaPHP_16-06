@@ -44,6 +44,10 @@
                 $msg = "<h3>Usuario ou E-mail, já existentes!</h3>";
                 break;
             
+                case 6:
+                $msg = "<h3>Usuario ou E-mail, não encontrados!</h3>";
+                break;
+            
             default:
                 $msg = "";
                 break;

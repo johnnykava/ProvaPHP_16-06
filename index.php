@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -14,6 +15,11 @@
                 require_once 'function.php';
 
                 validar_codigo();
+
+                if(!empty($_SESSION)){
+                    header('location:dashboard.php');
+                    exit();
+                }
             ?>
             <form action="validar.php" method="post">
                 <input type="text" id="usuario" name="usuario" placeholder="Usuario:" required>
