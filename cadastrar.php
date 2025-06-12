@@ -1,5 +1,4 @@
 <?php
-
     require_once 'function.php';
 
     if(form_nao_enviado()){
@@ -19,6 +18,27 @@
     $email = $_POST['email_cadastro'];
 
     $conn = conectar_banco();
+
+    $sql = "SELECT usuario, email FROM tb_usuario";
+
+    $resultado = mysqli_query($conn, $sql);
+
+    $linhas = mysqli_affected_rows($conn);
+
+    if($linhas < 0){
+        header('location:cadastro.php?codigo=4');
+        exit();
+    }
+
+    while($usuario_tabela = mysqli_fetch_assoc($resultado)){
+        $usuario_atual = $usuario_tabela['usuario'];
+        $email_atual = $usuario_tabela['email'];
+
+        if($usuario_atual == $usuario || $email_atual == $email){
+            header('location:cadastro.php?codigo=5');
+            exit();
+        }
+    }
 
     $sql = "INSERT INTO tb_usuario (usuario,senha,email)
     VALUES (?,?,?)";

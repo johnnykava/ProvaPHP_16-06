@@ -17,9 +17,9 @@
 
             <?php
 
-            require_once 'function.php';
+                require_once 'function.php';
 
-            validar_codigo();
+                validar_codigo();
             ?>
 
             </div>
