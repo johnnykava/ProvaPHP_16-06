@@ -6,8 +6,18 @@
         exit();
     }
 
-    if(form_em_branco()){
-        header('location:index.php?codigo=2');
+    if(isset($_POST['email_cadastro'])){
+        if(form_em_branco_cadastro()){
+            header('location:cadastro.php?codigo=2');
         exit();
+        }
     }
+
+    else if(isset($_POST['usuario'])){
+        if(form_em_branco_index()){
+            header('location:index.php?codigo=2');
+        exit();
+        }
+    }
+    
 ?>

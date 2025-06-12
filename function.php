@@ -3,9 +3,15 @@
         return $_SERVER['REQUEST_METHOD'] !== 'POST';
     }
 
-    function form_em_branco(){
-        return empty($_POST['usuario'] ||
-                     $_POST['senha']);
+    function form_em_branco_index(){
+        return empty($_POST['usuario']) ||
+               empty($_POST['senha']);
+    }
+
+    function form_em_branco_cadastro(){
+        return empty($_POST['usuario_cadastro']) ||
+               empty($_POST['senha_cadastro']) ||
+               empty($_POST['email_cadastro']);
     }
 
     function validar_codigo(){
