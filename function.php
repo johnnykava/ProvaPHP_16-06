@@ -34,6 +34,15 @@
                 $msg = "<h3>Ocorreu um erro ao acessar banco de dados. Por favor, contate
                         o suporte, ou tente novamente mais tarde</h3>";
                 break;
+
+            case 4:
+                $msg = "<h3>Ocorreu um erro ao se cadastrar. Por favor, contate
+                        o suporte, ou tente novamente mais tarde</h3>";
+                break;
+
+            case 5:
+                $msg = "<h3>Usuario ou E-mail, já existentes!</h3>";
+                break;
             
             default:
                 $msg = "";
