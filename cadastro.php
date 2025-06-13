@@ -38,7 +38,7 @@
                     <input type="password" id="senha_cadastro" name="senha_cadastro" placeholder="Senha" required>
                     <input type="email" id="email_cadastro" name="email_cadastro" placeholder="Email" required>
                     <button type="submit">Enviar</button>
-                    <a class="botao-link" href="index.php">Voltar a Home</a>
+                    <a class="botao-link" href="index.php">Voltar a Login</a>
                 </div> 
             </form>  
         </main>
