@@ -14,6 +14,11 @@
                empty($_POST['email_cadastro']);
     }
 
+    function form_em_branco_item(){
+        return empty($_POST['nome']) ||
+               empty($_POST['autor']);
+    }
+
     function validar_codigo(){
         if(!isset($_GET['codigo'])){
             return;
@@ -37,7 +42,7 @@
                 break;
 
             case 4:
-                $msg = "<h3>Ocorreu um erro ao se cadastrar. Por favor, contate
+                $msg = "<h3>Ocorreu um erro ao cadastrar. Por favor, contate
                         o suporte, ou tente novamente mais tarde</h3>";
                 break;
 
@@ -56,7 +61,11 @@
             case 8:
                 $msg = "<h3>Erro ao buscar suas tarefas. 
                         Acione o suporte ou tente novamente mais tarde</h3>";
-                break;       
+                break;    
+                
+            case 9:
+                $msg = "<h3>Cadastrado com Sucesso!</h3>";
+                break; 
             
             default:
                 $msg = "";

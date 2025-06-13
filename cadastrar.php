@@ -66,5 +66,5 @@
     $_SESSION['usuario'] = $usuario;
     $_SESSION['email'] = $email;
 
-    header('location:dashboard.php');
+    header('location:livro/dashboard.php');
 ?>

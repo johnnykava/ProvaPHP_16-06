@@ -141,16 +141,37 @@ nav{
 }
 
 .container-main{
-    width: 90%;
-    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.section-lista-itens{
+.section-livros{
     text-align: center;
 }
 
-.section-lista-itens h1{
+.section-livros h1{
     color: #ff8c00;
     margin: 20px 0;
+}
+
+.section-livros input{
+    padding: 5px;
+    margin-bottom: 5px;
+
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 5px 5px rgba(1, 1, 1, 0.2);
+}
+
+.section-livros button{
+    width: 100%;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background: linear-gradient(90deg, #ff8c00, #ff0080);
+    cursor: pointer;
 }
 /*==================================*/

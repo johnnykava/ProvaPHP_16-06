@@ -59,5 +59,5 @@
     $_SESSION['email'] = $email;
     $_SESSION['senha'] = $senha;
 
-    header('location:dashboard.php');
+    header('location:livro/dashboard.php');
 ?>

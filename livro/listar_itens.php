@@ -1,6 +1,8 @@
 <?php
+    require_once '../includes/conexao.php';
+    require_once '../lock.php';
+
     function listar_itens(){
-        require_once 'includes/conexao.php';
 
         $conn = conectar_banco();
 
@@ -14,7 +16,7 @@
         $linhas = mysqli_affected_rows($conn);
 
         if($linhas < 0){
-            header('location:dashboard.php?codigo=8');
+            header('location:/livro/dashboard.php?codigo=8');
             exit();
         }
 
