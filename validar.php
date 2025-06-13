@@ -44,7 +44,7 @@
     }
 
     if($linhas == 0){
-        header('location:index.php?codigo=6');
+        header('location:index.php?codigo=7');
         exit();
     }
 
@@ -57,6 +57,7 @@
     $_SESSION['id'] = $id;
     $_SESSION['usuario'] = $usuario;
     $_SESSION['email'] = $email;
+    $_SESSION['senha'] = $senha;
 
     header('location:dashboard.php');
 ?>

@@ -23,7 +23,8 @@
 
         switch($codigo){
             case 1:
-                $msg = "<h3>Você não tem acesso a página solicitada!</h3>";
+                $msg = "<h3>Você não tem acesso a página solicitada!</h3>
+                        <h3>Realize o seu login ou cadastre-se</h3>";
                 break;
 
             case 2:
@@ -44,9 +45,18 @@
                 $msg = "<h3>Usuario ou E-mail, já existentes!</h3>";
                 break;
             
-                case 6:
+            case 6:
                 $msg = "<h3>Usuario ou E-mail, não encontrados!</h3>";
                 break;
+
+            case 7:
+                $msg = "<h3>Usuario ou Senha incorretos!</h3>";
+                break; 
+                 
+            case 8:
+                $msg = "<h3>Erro ao buscar suas tarefas. 
+                        Acione o suporte ou tente novamente mais tarde</h3>";
+                break;       
             
             default:
                 $msg = "";
