@@ -10,30 +10,39 @@
 <body class="dashboard">
     <header class="header-dashboard">
         <div class="container-header">
-            <h1>Devteca</h1>
+            <h1 class="titulo-header">Devteca</h1>
             <nav>
-                <h1 id="h1_dashboard">Bem vindo <?= $_SESSION['usuario']?></h1>
+                <h1 id="h1_dashboard">Bem vindo, <?= $_SESSION['usuario']?></h1>
                 <a href="logout.php" class="botao-sair-dashboard">Sair</a>
             </nav>
         </div>
     </header>
-    <main>
+    <main class="main-dashboard">
         <nav class="menu-lateral">
             <ul>
                 <li>
-                    <a href="dashboard.php">Home</a>
+                    <a href="dashboard.php">Listar Livros</a>
                 </li>
                 <li>
-                    <a href="itens.php">Listar Itens</a>
+                    <a href="novo_item.php">Cadastrar Livro</a>
                 </li>
                 <li>
-                    <a href="novo_item.php">Cadastrar Itens</a>
-                </li>
-                <li>
-                    <a href="editar_item.php">Editar Item</a>
+                    <a href="editar_item.php">Editar Livro</a>
                 </li>
             </ul>
         </nav>
+        <div class="container-conteudo">
+            <div class="container-main">
+                <section class="section-lista-itens">
+                    <h1>Livros Cadastrados</h1>
+                    <?php 
+                        require_once 'itens.php';
+
+                        listar_itens();
+                    ?>
+                </section>
+            </div>
+        </div>
     </main>
     <footer>
 

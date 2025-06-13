@@ -1,25 +1,5 @@
-<?php require_once 'lock.php';?>
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Devteca|Listagem Itens</title>
-</head>
-<body>
-    <h1>Itens cadastrados</h1>
-
-    <div class="links_dashboard">
-        <nav>
-            <a href="dashboard.php">HOME</a>
-            <a href="itens.php">LISTAR ITENS</a>
-            <a href="novo_item.php">CADASTRAR ITENS</a>
-            <a href="editar_item.php">EDITAR ITEM</a>
-            <a href="logout.php">ENCERRAR SESSÃO</a>
-        </nav>
-
-    <?php
-
+<?php
+    function listar_itens(){
         require_once 'includes/conexao.php';
 
         $conn = conectar_banco();
@@ -34,12 +14,13 @@
         $linhas = mysqli_affected_rows($conn);
 
         if($linhas < 0){
-        header('location:itens.php?codigo=8');
-        exit();
+            header('location:dashboard.php?codigo=8');
+            exit();
         }
 
         if ($linhas == 0) {
-            exit("<h3>Você não possui tarefas cadastradas</h3>");
+            echo "<h3>Você não possui livros cadastrados</h3>";
+            return;
         }
 
         echo '<div class="tabela_itens">';
@@ -64,7 +45,5 @@
         echo '</tbody>';
         echo '</table>';
         echo '</div>';
-    ?>
-    
-</body>
-</html>
+    }
+?>
