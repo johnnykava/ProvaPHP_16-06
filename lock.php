@@ -4,5 +4,6 @@
        !isset($_SESSION['senha'])
     ){
         header('location:index.php?codigo=1');
+        exit;
     }
 ?>
