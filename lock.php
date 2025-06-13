@@ -3,7 +3,7 @@
        !isset($_SESSION['usuario']) ||
        !isset($_SESSION['senha'])
     ){
-        header('location:index.php?codigo=1');
+        header('location:/index.php?codigo=1');
         exit;
     }
 ?>

@@ -1,10 +1,10 @@
-<?php require_once 'lock.php';?>
+<?php require_once '../lock.php';?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <title>Devteca | Dashboard</title>
 </head>
 <body class="dashboard">
@@ -33,8 +33,19 @@
         </nav>
         <div class="container-conteudo">
             <div class="container-main">
-                <section>
-                    
+                <section class="section-livros">
+                    <h1>Cadastrar Livro</h1>
+                    <form action="cadastrar_item.php" method="post">
+                        <input type="text" id="nome" name="nome" placeholder="Titulo:"><br>
+                        <input type="text" id="autor" name="autor"placeholder="Autor:"><br>
+                        <button type="submit">Cadastrar</button>
+                    </form>
+
+                    <?php 
+                        require_once '../function.php';
+
+                        validar_codigo();
+                    ?>
                 </section>
             </div>
         </div>

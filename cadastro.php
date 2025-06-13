@@ -23,7 +23,7 @@
                 validar_codigo();
 
                 if(!empty($_SESSION)){
-                    header('location:dashboard.php');
+                    header('location:livro/dashboard.php');
                     exit();
                 }
             ?>

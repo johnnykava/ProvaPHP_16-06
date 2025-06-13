@@ -1,10 +1,10 @@
-<?php require_once 'lock.php';?>
+<?php require_once '../lock.php';?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <title>Devteca | Dashboard</title>
 </head>
 <body class="dashboard">
@@ -13,7 +13,7 @@
             <h1 class="titulo-header">Devteca</h1>
             <nav>
                 <h1 id="h1_dashboard">Bem vindo, <?= $_SESSION['usuario']?></h1>
-                <a href="logout.php" class="botao-sair-dashboard">Sair</a>
+                <a href="../logout.php" class="botao-sair-dashboard">Sair</a>
             </nav>
         </div>
     </header>
@@ -33,10 +33,10 @@
         </nav>
         <div class="container-conteudo">
             <div class="container-main">
-                <section class="section-lista-itens">
+                <section class="section-livros">
                     <h1>Livros Cadastrados</h1>
                     <?php 
-                        require_once 'itens.php';
+                        require_once 'listar_itens.php';
 
                         listar_itens();
                     ?>
