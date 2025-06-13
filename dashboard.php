@@ -5,23 +5,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <title>c</title>
+    <title>Devteca | Dashboard</title>
 </head>
 <body class="dashboard">
-    <div class="container_dashboard">
-        <div class="titulo_dashboard">
-            <h1 id="h1_dashboard">Bem vindo <?= $_SESSION['usuario']?>, ao Devteca</h1>
-            <p id="p_dashboard">Selecione o que deseja fazer</p>
+    <header class="header-dashboard">
+        <div class="container-header">
+            <h1>Devteca</h1>
+            <nav>
+                <h1 id="h1_dashboard">Bem vindo <?= $_SESSION['usuario']?></h1>
+                <a href="logout.php" class="botao-sair-dashboard">Sair</a>
+            </nav>
         </div>
-    <div class="links_dashboard">
-        <nav>
-            <a href="dashboard.php">HOME</a>
-            <a href="itens.php">LISTAR ITENS</a>
-            <a href="novo_item.php">CADASTRAR ITENS</a>
-            <a href="editar_item.php">EDITAR ITEM</a>
-            <a href="logout.php">ENCERRAR SESSÃO</a>
+    </header>
+    <main>
+        <nav class="menu-lateral">
+            <ul>
+                <li>
+                    <a href="dashboard.php">Home</a>
+                </li>
+                <li>
+                    <a href="itens.php">Listar Itens</a>
+                </li>
+                <li>
+                    <a href="novo_item.php">Cadastrar Itens</a>
+                </li>
+                <li>
+                    <a href="editar_item.php">Editar Item</a>
+                </li>
+            </ul>
         </nav>
-    </div>
-    </div>
+    </main>
+    <footer>
+
+    </footer>
 </body>
 </html>
