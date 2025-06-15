@@ -62,6 +62,9 @@
 
     session_start();
 
+    // A função mysqli_insert_id() pega o último ID inserido na conexão atual.
+    $id = mysqli_insert_id($conn);
+
     $_SESSION['id'] = $id;
     $_SESSION['usuario'] = $usuario;
     $_SESSION['email'] = $email;
