@@ -37,7 +37,10 @@
                     <h1>Livros Cadastrados</h1>
                     <?php 
                         require_once 'listar_itens.php';
+                        require_once '../function.php';
 
+                        validar_codigo();
+                        
                         listar_itens();
                     ?>
                 </section>

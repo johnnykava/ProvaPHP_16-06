@@ -26,9 +26,10 @@
         }
 
         echo '<div class="tabela_itens">';
-        echo '<table>';
+        echo '<table class="tabela_livro">';
         echo '<thead>';
         echo '<tr>
+              <th>AÇÕES</th>
               <th>ID</th>
               <th>LIVRO</th>
               <th>AUTOR</th>';
@@ -38,6 +39,10 @@
 
         while ($livro_atual = mysqli_fetch_assoc($resultado)) {
             echo '<tr>';
+            echo '<td>';
+            echo '<a href="editar_item.php?id_livro=' . $livro_atual['id_livro'] . '" class="botao-editar">Editar</a>';
+            echo '<a href="excluir_item.php?id_livro=' . $livro_atual['id_livro'] . '" class="botao-excluir">X</a>';
+            echo '</td>';
             echo '<td>' . $livro_atual['id_livro'] . '</td>';
             echo '<td>' . $livro_atual['nome'] . '</td>';
             echo '<td>' . $livro_atual['autor'] . '</td>';

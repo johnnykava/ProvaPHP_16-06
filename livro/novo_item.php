@@ -36,8 +36,8 @@
                 <section class="section-livros">
                     <h1>Cadastrar Livro</h1>
                     <form action="cadastrar_item.php" method="post">
-                        <input type="text" id="nome" name="nome" placeholder="Titulo:"><br>
-                        <input type="text" id="autor" name="autor"placeholder="Autor:"><br>
+                        <input type="text" id="nome" name="nome" placeholder="Titulo:" required><br>
+                        <input type="text" id="autor" name="autor"placeholder="Autor:" required><br>
                         <button type="submit">Cadastrar</button>
                     </form>
 
