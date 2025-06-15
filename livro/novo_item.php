@@ -26,9 +26,6 @@
                 <li>
                     <a href="novo_item.php">Cadastrar Livro</a>
                 </li>
-                <li>
-                    <a href="editar_item.php">Editar Livro</a>
-                </li>
             </ul>
         </nav>
         <div class="container-conteudo">
