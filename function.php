@@ -42,7 +42,7 @@
                 break;
 
             case 4:
-                $msg = "<h3>Ocorreu um erro ao cadastrar. Por favor, contate
+                $msg = "<h3>Ocorreu um erro ao cadastrar ou editar. Por favor, contate
                         o suporte, ou tente novamente mais tarde</h3>";
                 break;
 
@@ -69,6 +69,14 @@
 
             case 10:
                 $msg = "<h3>Erro ao excluir livro!</h3>";
+                break; 
+            
+            case 11:
+                $msg = "<h3>Erro ao editar livro!</h3>";
+                break; 
+
+            case 12:
+                $msg = "<h3>Editado com Sucesso!</h3>";
                 break; 
             
             default:
