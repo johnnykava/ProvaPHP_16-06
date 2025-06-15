@@ -66,6 +66,10 @@
             case 9:
                 $msg = "<h3>Cadastrado com Sucesso!</h3>";
                 break; 
+
+            case 10:
+                $msg = "<h3>Erro ao excluir livro!</h3>";
+                break; 
             
             default:
                 $msg = "";

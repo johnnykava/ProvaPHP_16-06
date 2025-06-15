@@ -92,7 +92,7 @@ body{
 }
 
 nav{
-    width: 20%;
+    width: 30%;
     display: flex;
     justify-content: space-between;
 }
@@ -148,6 +148,7 @@ nav{
 }
 
 .section-livros{
+    width: 40%;
     text-align: center;
 }
 
@@ -173,5 +174,56 @@ nav{
     color: white;
     background: linear-gradient(90deg, #ff8c00, #ff0080);
     cursor: pointer;
+}
+
+.tabela_itens{
+    width: 100%;
+}
+
+.tabela_livro{
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.tabela_livro th {
+    background-color: #ff0080;
+    color: white;
+    padding: 15px;
+}
+
+.tabela_livro td {
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+    color: #333;
+    background-color: #fff;
+}
+
+.tabela_livro tbody tr:hover {
+    background-color: #fce4ec;
+}
+
+.tabela_livro a{
+    display: inline-block;
+    padding: 6px 12px;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 14px;
+    margin-right: 5px;
+    transition: opacity 0.3s;
+}
+
+.tabela_livro a:hover {
+    opacity: 0.8;
+}
+
+.botao-editar{
+    background: linear-gradient(90deg, #ff8c00, #ff0080);
+}
+
+.botao-excluir{
+    background: linear-gradient(90deg, #ff8c00, #ff0080);
 }
 /*==================================*/

@@ -65,6 +65,7 @@
     $_SESSION['id'] = $id;
     $_SESSION['usuario'] = $usuario;
     $_SESSION['email'] = $email;
+    $_SESSION['senha'] = $senha;
 
     header('location:livro/dashboard.php');
 ?>
