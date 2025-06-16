@@ -40,8 +40,8 @@
         while ($livro_atual = mysqli_fetch_assoc($resultado)) {
             echo '<tr>';
             echo '<td>';
-            echo '<a href="editar_item.php?id_livro=' . $livro_atual['id_livro'] . '" class="botao-editar">Editar</a>';
-            echo '<a href="excluir_item.php?id_livro=' . $livro_atual['id_livro'] . '" class="botao-excluir">X</a>';
+            echo '<a href="editar_item.php?id_livro=' . $livro_atual['id_livro'] . '" class="botao-editar">✏️</a>';
+            echo '<a href="excluir_item.php?id_livro=' . $livro_atual['id_livro'] . '" class="botao-excluir">🗑️</a>';
             echo '</td>';
             echo '<td>' . $livro_atual['id_livro'] . '</td>';
             echo '<td>' . $livro_atual['nome'] . '</td>';
